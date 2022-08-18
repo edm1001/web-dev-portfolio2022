@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Portfolio() {
+function Projects() {
   return (
     <div>Portfolio</div>
   )
 }
 
-export default Portfolio
+export default Projects;
