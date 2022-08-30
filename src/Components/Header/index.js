@@ -5,18 +5,22 @@ import {Link} from 'react-router-dom';
 function Header() {
   return (
       <header>
-        <nav>
+        <nav className='navbar'>
+        <ul className='navlinks'>
+        <li>
         <Link to="/">
         Home
-        </Link>
+        </Link></li>
+        <li>
         <Link to="/about">
-        About me</Link>
+        Bio</Link></li>
         <Link to="/project">
         Projects</Link>
+        <li>
         <Link to="/contact">
           Contact Me!
-        </Link>
-        
+        </Link></li>
+        </ul>
         </nav>
       </header>
   )

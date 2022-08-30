@@ -1,31 +1,76 @@
-.App {
-  text-align: center;
+body {
+  font-family: monospace;
+  height: 200vh;
+  width:100%;
+  line-height: 2.0;
+  margin:0;
+}
+h1 {
+  text-align:center;
+  border-bottom: 4px ridge aliceblue;
+  font-weight: bolder;
+  font-size: 30px;
+}
+/* HEADER START */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  padding-inline: 40px;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  /* 
+  -rid the text decoration
+  -find better background
+  - */
+  background:black;
+}
+.navlinks{
+  
+  list-style-type: none;
+  text-decoration: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* HEADER END */
+/* HOME START */
+.home{
+  width:59%;
+  padding: 10px
+}
+/* HOME END */
+
+/*ABOUT START  */
+/* -make it 50 50 ratio add picture with a coding background using canva */
+
+/* ABOUT END */
+
+/* CONTACT */
+
+
+
+
+
+
+/* FOOTER START */
+.footer {
+  background-color: black;
+  background-size: cover;
+  width:100%;
+  border-top: 3px solid salmon;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  padding-top: 20px; 
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
+
+/* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +80,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */

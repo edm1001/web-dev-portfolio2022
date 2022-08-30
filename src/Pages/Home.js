@@ -6,8 +6,8 @@ import React from 'react'
 
 export const Home = () => {
   return (
-    <section>
-       <h1> Hello Welcome to my webpage</h1>
+    <section  className="home">
+       <h1> Welcome to my Webpage</h1>
        <p>
         My name is Edmer Valencia, I am a Full Stack Developer graduated from a coding bootcamp offered in UT at Austin. I am eager to learn and create various technologies and projects.
        </p>

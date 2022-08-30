@@ -7,6 +7,7 @@ import Projects from './Pages/Project';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import Home from "./Pages/Home";
 
+
 function App() {
   return (
     <div className="App">
