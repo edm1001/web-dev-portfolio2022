@@ -10,15 +10,12 @@ function Header() {
         <Link to="/">
         Home
         </Link>
-        
-        <Link to="/about">
-        Bio</Link>
-        <Link to="/project">
-        Projects</Link>
-        
-        <Link to="/contact">
-          Contact Me!
-        </Link>
+        <a href='about'>About</a>
+        <a>Portfolio</a>
+        <a>Contact</a>
+        <a>Services</a>
+        <a>Resume</a>
+        <a>Testimonials</a>
         </nav>
       </header>
   )
