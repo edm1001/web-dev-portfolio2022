@@ -1,11 +1,12 @@
 import React from "react";
 import Header from './Components/Header';
 import Footer from './Components/Footer';
-import About from './Pages/About';
+import About from './Pages/Bio';
 import Contact from "./Pages/Contact";
 import Projects from './Pages/Project';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import Home from "./Pages/Home";
+// import Particle from './Components/pasticleBackground';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
     <div className="App">
       <Router>
         <Header/>
+        <div>
         <Routes>
           <Route 
           path="/"
@@ -31,6 +33,8 @@ function App() {
           element = {<Projects/>}>
           </Route>
         </Routes>
+        </div>
+        {/* <div><Particle /></div> */}
         <Footer/>
       </Router>
       
