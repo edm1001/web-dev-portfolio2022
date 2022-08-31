@@ -20,16 +20,11 @@ function Contact() {
                 <FaLinkedin
   color='darkblue' size='40px'
                 /> 
-                </a>
-                <h3>LinkedIn</h3>
-                </div>
-
-                <div className='icons'>
                 <a href='https://github.com/edm1001'>
                 <FaGithub
   color='darkblue' size='40px'
                 /></a>
-                <h3>Github</h3>
+                </a>
                 </div>
     </div>
     </section>

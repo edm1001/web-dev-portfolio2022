@@ -88,7 +88,10 @@ h1 {
   
 }
 .icons{
-  padding:40px;
+  display: flex;
+  flex-direction: row-reverse;
+  width:100%;
+  justify-content: space-between;
 }
 .message{
   display: flex;
