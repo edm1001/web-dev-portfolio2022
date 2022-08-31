@@ -2,9 +2,9 @@ import React from 'react'
 
 function Projects() {
   return (
-    <section>
+    <section className='portfolio'>
     <h1>Portfolio</h1>
-    <div className='portfolio'>
+    <div>
     <div>projext 1</div>
     <div>project 2</div>
     <div>project 3</div>

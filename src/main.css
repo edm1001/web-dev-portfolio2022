@@ -1,10 +1,18 @@
+:root {
+  --Grey : #343330;
+  --LightGrey: #4a442d;
+  --DarkBlue : #32373B;
+  --Blue : #4A5859;
+  --LightBlue: #CAF7E2;
+  --White : #fff ;
+}
 body {
   font-family: monospace;
   height: 100%;
   width:100%;
   line-height: 2.0;
   margin:0;
-  background-color: lightgray;
+  background-color: var(--LightGrey)
 }
 h1 {
   text-align:center;
@@ -19,7 +27,7 @@ h1 {
   font-weight: bold;
   padding-inline: 40px;
   flex-direction:row;
-  color: white;
+  color: var(--White);
   align-items: center;
   background:black;
   padding-block: 20px;
@@ -42,8 +50,12 @@ h1 {
   width: 30%;
   padding-left:30px;
 }
+.welcome h1 {
+  color: var(--)
+}
 .welcome{
-  width: 60%;  background-color: beige;
+  width: 60%;  background-color: var(--Grey);
+  color: var(--White);
   padding:10px;
   margin-left:10px;
   border-radius:30px;
@@ -58,17 +70,44 @@ h1 {
 .portfolio{
   width:100%;
   height:500px;
+  background-color: var(--Blue);
 }
+
 
 /* CONTACT START */
 .contact{
-  height: 420px;
+  height: 100%;
   display: flex;
   flex-direction: column;
+  background-color: var(--LightGrey);
 }
-
+.contact textarea{
+  margin-inline:5px;
+  width:50%;
+  align-items: center;
+  
+}
 .icons{
   padding:40px;
+}
+.message{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items:center;
+}
+#msg-info {
+  width:500px;
+  height:250px;
+  margin-bottom: 20px ;
+  text-align: center;
+  border-radius: 5px;
+}
+.sender {
+  display: grid;
+}
+.sender input {
+  border-bottom: 5px;
 }
 /* CONTACT END */
 

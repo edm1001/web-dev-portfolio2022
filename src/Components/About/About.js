@@ -2,7 +2,7 @@ import React from 'react'
 
 function About() {
   return (
-    <section > 
+    <section style={{marginBlock:'150px'}} > 
     <div className='welcome'>
        <h1> Welcome to my Webpage</h1>
        <p>
