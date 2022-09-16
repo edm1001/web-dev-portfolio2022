@@ -5,18 +5,20 @@
   --Blue : #4A5859;
   --LightBlue: #CAF7E2;
   --White : #fff ;
+  --Black : #000;
 }
 body {
   font-family: monospace;
-  height: 100%;
   width:100%;
+  height:100%;
   line-height: 2.0;
   margin:0;
-  background-color: var(--LightGrey)
+  background-color: var(--Black);
 }
 h1 {
+  color: whitesmoke;
   text-align:center;
-  border-bottom: 4px ridge aliceblue;
+  border-bottom: 4px ridge var(--LightBlue);
   font-weight: bolder;
   font-size: 30px;
 }
@@ -29,26 +31,30 @@ h1 {
   flex-direction:row;
   color: var(--White);
   align-items: center;
-  background:black;
+  background: var(--LightGrey);
   padding-block: 20px;
   /* 
   -rid the text decoration
   -find better background
   - */
 }
+.navbar a {
+  text-decoration: none;
+  list-style-type: none;
+  color: var(--White)
+}
 
 /* HEADER END */
 
 /* HOME START */
-.home{
-  display: flex;
-  justify-content: space-between;
-  margin-block: 200px;
-  flex-wrap: wrap;
+.qoute{
+  text-align: center;
+  align-content: center;
+  margin: 100px;
+
 }
-.home-photo{
-  width: 30%;
-  padding-left:30px;
+.qoute p {
+  color: var(--LightBlue);
 }
 .welcome h1 {
   color: var(--)
@@ -70,10 +76,39 @@ h1 {
 .portfolio{
   width:100%;
   height:500px;
+  text-align: center;
   background-color: var(--Blue);
 }
+/* PROJECT END */
+/* SERVICES START */
+.Services{
+  background-color: var(--Grey);
+}
+.service-list{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-between;
+  flex:1;
+}
+.service {
+  width:30%;
+  height: 100%;
+  margin:5px; 
+  padding: 20px;
+  background-color: var(--White);
+  border-radius: 5px;
 
+}
+.skills {
+  color: white;
+  text-align: center;
+}
+.skills li {
+  color: black;
+}
 
+/* SERVICES END */
 /* CONTACT START */
 .contact{
   height: 100%;
@@ -114,8 +149,19 @@ h1 {
 }
 /* CONTACT END */
 
+/* REVIEW START */
+.review-list{
+  justify-content: space-around;
+  align-items:center;
+  text-align:center;
+  background-color: var(--White);
+  margin: 20px;
+  padding:10px 5%;
 
-
+  border: 10px outset var(--Blue);
+  border-radius: 10px
+}
+/*  REVIEW END*/
 
 
 
@@ -128,7 +174,6 @@ h1 {
   color: white;
   text-align: center; 
   padding: 10px 0; 
-
 }
 
 
