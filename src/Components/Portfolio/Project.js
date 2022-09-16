@@ -1,16 +1,21 @@
 import React from 'react'
-
+import Project01 from '../../Assets/images/placeholder.png';
+import Project02 from '../../Assets/images/placeholder.png'
 function Projects() {
   return (
     <section className='portfolio'>
     <h1>Portfolio</h1>
-    <div>
-    <div>projext 1</div>
-    <div>project 2</div>
-    <div>project 3</div>
-    <div>project 4</div>
-    <div>project 5</div>
-    <div>project 6</div>
+    <div className='projects'>
+    <div id='project1'>
+    <img src={Project01} alt ='project01'/>
+    <h4>Travel Diary</h4>
+    <p> JavaScript, HTML, CSS, HandleBars, Multer</p></div>
+    <div id='project2'> 
+    <img src={Project02} alt ='project02'/>
+    <h4>CHatterize!</h4>
+    <p> React, HTML, CSS, JavaScript</p>
+    </div>
+    
     </div>
     </section>
   )
