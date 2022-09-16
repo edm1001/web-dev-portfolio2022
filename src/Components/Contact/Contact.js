@@ -18,11 +18,11 @@ function Contact() {
     <div className='icons'>
                 <a href='https://www.linkedin.com/in/edmer-valencia-080414227/'>
                 <FaLinkedin
-  color='darkblue' size='40px'
+  color='darkblue' size={50}
                 /> 
                 <a href='https://github.com/edm1001'>
                 <FaGithub
-  color='darkblue' size='40px'
+  color='white' size={50}
                 /></a>
                 </a>
                 </div>

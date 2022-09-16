@@ -10,11 +10,10 @@ function About() {
     <div  className='qoute' style={{color:'white'}}>
       <h2> bl scbiuw scbhsdbhcs socn cb iwsb consscb wuah oasb cbsciun c auob a  sjcboua </h2>
       <h4>
-      <FcGoogle/>
-      @edmerfranciz@gmail.com
+      <FcGoogle size={50}/>
       </h4>
       <h4>
-      <FaGithubAlt/> 
+      <FaGithubAlt size={50}/> 
       </h4>
       
       

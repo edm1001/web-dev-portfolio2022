@@ -121,7 +121,7 @@ h1 {
 /* PROJECT END */
 /* SERVICES START */
 .Services{
-  background-color: var(--Grey);
+  background-color: var(--Black);
 }
 .service-list{
   display: flex;
@@ -143,17 +143,15 @@ h1 {
   color: white;
   text-align: center;
 }
-.skills li {
-  color: black;
-}
 
 /* SERVICES END */
 /* CONTACT START */
 .contact{
+  color: var(--LightBlue);
   height: 100%;
   display: flex;
   flex-direction: column;
-  background-color: var(--LightGrey);
+  background-color: var(--Black);
 }
 .contact textarea{
   margin-inline:5px;
@@ -189,14 +187,20 @@ h1 {
 /* CONTACT END */
 
 /* REVIEW START */
+#review h1 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.reviews{
+  background-color: var(--LightGrey)
+}
 .review-list{
   justify-content: space-around;
   align-items:center;
   text-align:center;
   background-color: var(--White);
-  margin: 20px;
-  padding:10px 5%;
-
+  margin: 10px;
+  padding:20px 15%;
   border: 10px outset var(--Blue);
   border-radius: 10px
 }

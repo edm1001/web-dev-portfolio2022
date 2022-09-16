@@ -2,8 +2,9 @@ import React from 'react'
 
 function Reviews() {
   return (
-    <section>
+    <div id='review'>
     <h1>Reviews</h1>
+    <section className='reviews'>
     <div className='review-list'>
     <p>
     Hi Edmer,
@@ -48,6 +49,7 @@ Overall great project guys! This is an awesome portfolio piece that will for sur
         <p>April 18 2022</p>
     </div>
     </section>
+    </div>
   )
 }
 
