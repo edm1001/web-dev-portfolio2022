@@ -38,8 +38,7 @@ function Services() {
     </div>
     <div className='skills'>
     <h2> Technologies Learned</h2>
-    <ul style={{listStyleType:'none', size:'40px'}}>
-        <li>
+    <p className='tech'>
           {/* add colors for icons */}
           <AiOutlineHtml5 size={50} color='darkorange'/>
           <IoLogoCss3 size={50}/>
@@ -59,9 +58,9 @@ function Services() {
           <GrHeroku size={50}/>
           <GrMysql size={50}/>
           <AiFillGithub size={50}/>
-          </li>
+          
 
-    </ul>
+    </p>
     </div>
     </section>
   ) }

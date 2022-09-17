@@ -112,11 +112,11 @@ h1 {
 }
 #project1{
   flex:1;
-  /* background-image: url(./Assets/images/placeholder.png); */
 }
-#project2{
-  flex: 1;
-
+#project1 a , #project2 a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
 }
 /* PROJECT END */
 /* SERVICES START */
@@ -142,6 +142,9 @@ h1 {
 .skills {
   color: white;
   text-align: center;
+}
+.tech {
+  justify-content: space-between;
 }
 
 /* SERVICES END */
@@ -183,6 +186,12 @@ h1 {
 }
 .sender input {
   border-bottom: 5px;
+}
+#sender-name{
+  margin-bottom:2px;
+}
+#sender-email{
+  margin-top: 5px;
 }
 /* CONTACT END */
 

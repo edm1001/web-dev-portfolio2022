@@ -10,8 +10,8 @@ function Contact() {
     <h2> Message Me!</h2>  
     <input id='msg-info' placeholder='write your pessage here'></input>
     <div className='sender'>
-    <input placeholder='name'></input>
-    <input placeholder='email'></input>
+    <input placeholder='name' id='sender-name'></input>
+    <input  id='sender-email' placeholder='email'></input>
     </div>
     </div>
     <div className='contact'>
