@@ -1,6 +1,4 @@
 import React from 'react'
-import Project01 from '../../Assets/images/placeholder.png';
-import Project02 from '../../Assets/images/placeholder.png';
 import {BiLinkExternal} from 'react-icons/bi';
 import travelDiary from '../../Assets/gifs/travel-blog.gif';
 import Chatterize from '../../Assets/gifs/chatterize.gif';

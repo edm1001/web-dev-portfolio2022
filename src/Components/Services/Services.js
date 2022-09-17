@@ -11,11 +11,6 @@ import {GrHeroku , GrMysql} from 'react-icons/gr';
 import {FaReact, FaBootstrap} from 'react-icons/fa';
 import {VscJson} from 'react-icons/vsc'
 
-//const Service = () => {
-//   useEffect(() => {
-//     Aos.init({duration:2000});
-//   }, [])
-// };
 const Services =() => {
     useEffect(() => {
     Aos.init({duration:2000});

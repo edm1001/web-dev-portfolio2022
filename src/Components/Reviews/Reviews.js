@@ -1,11 +1,16 @@
-import React from 'react'
+import React, {useEffect} from 'react'
+import Aos from "aos";
+import "aos/dist/aos.css"
 
-function Reviews() {
+const Reviews =() => {
+  useEffect(()=> {
+    Aos.init({duration:3000})
+  },[])
   return (
     <div id='review'>
     <h1>Reviews</h1>
     <section className='reviews'>
-    <div className='review-list'>
+    <div data-aos="flip-down" className='review-list'>
     <p>
     Hi Edmer,
 Your Regex tutorial on email validation is clean and readable! You were able to explain the purpose and the proper usage of this complex feature! 
@@ -18,12 +23,12 @@ Overall strong effort, keep up the awesome work!
     <h4>Central Grader, DG</h4>
     <p>April 27 2022</p>
     </div>
-    <div className='review-list'>
+    <div className='review-list' data-aos="flip-down">
         <p> All MVP requirements were exceeded. Very Impressive and Congratulations! You deserve this grade!</p>
         <h4>Walter Perry</h4>
         <p>June 4 2022</p>
     </div>
-    <div className='review-list'>
+    <div className='review-list' data-aos="flip-down">
         <p>Hi Edmer,
 Your Regex tutorial on email validation is clean and readable! You were able to explain the purpose and the proper usage of this complex feature! 
 You were able to provide a clear explanation of the underlying regex topics.  Great job including detailed sections that corresponded to important components in the starter code that make up the regex features. You were able to embed code snippets for each underlying example you used! 
@@ -35,7 +40,7 @@ Central Grader DG</p>
         <h4>Central Grader , DG</h4>
         <h5>April 27 2022</h5>
     </div>
-    <div className='review-list'>
+    <div className='review-list' data-aos="flip-down">
         <p>Congratulations on finishing project 2! Yall are over 2/3 done with the course and can now call yourselves full stack developers! Your project fulfilled all the requirements while still being responsive and polished. I am seriously impressed with the outcome you were able to achieve in only 2 weeks!
 
 I love the flow and layout of the information presented. Everything is easy to find at a glance, and the presentation is very polished and pleasing to the eye. Additionally, all the backend routes seem to be working properly! 
