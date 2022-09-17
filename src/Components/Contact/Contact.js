@@ -4,7 +4,7 @@ import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
 function Contact() {
   return (
-    <section className='contact'>
+    <section className='contact' id='contact'>
     <h1>Contact</h1>
     <div className='message'>
     <h2> Message Me!</h2>  

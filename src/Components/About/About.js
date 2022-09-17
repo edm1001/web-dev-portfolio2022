@@ -11,7 +11,7 @@ const About=()=> {
   }, [])
   return (
     <div>
-    <section style={{marginBlock:'150px'}} className="intro" >
+    <section style={{marginBlock:'150px'}} className="intro" id="home" >
     <div  className='qoute' style={{color:'white'}}>
       <h2> In all human affairs there are efforts, and there are results and the strength of the effort is the measure of the result </h2><h4 style={{color:'red'}}> -James Allen</h4>
       <h4>
@@ -25,7 +25,7 @@ const About=()=> {
       </div> 
 
     </section>
-    <section className='about'>
+    <section className='about' id="about">
     <div data-aos="fade-right" className='welcome' style={{flex:'1'}}>
        <h1> Welcome to my Webpage</h1>
        <p>

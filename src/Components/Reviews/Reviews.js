@@ -7,7 +7,7 @@ const Reviews =() => {
     Aos.init({duration:3000})
   },[])
   return (
-    <div id='review'>
+    <div id='reviews'>
     <h1>Reviews</h1>
     <section className='reviews'>
     <div data-aos="flip-down" className='review-list'>
