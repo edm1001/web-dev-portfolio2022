@@ -1,4 +1,6 @@
-import React from 'react'
+import React, {useEffect} from 'react'
+import Aos from 'aos';
+import "aos/dist/aos.css"
 
 //add tech logos
 import {AiOutlineHtml5, AiFillGithub} from 'react-icons/ai';
@@ -9,31 +11,40 @@ import {GrHeroku , GrMysql} from 'react-icons/gr';
 import {FaReact, FaBootstrap} from 'react-icons/fa';
 import {VscJson} from 'react-icons/vsc'
 
-function Services() {
+//const Service = () => {
+//   useEffect(() => {
+//     Aos.init({duration:2000});
+//   }, [])
+// };
+const Services =() => {
+    useEffect(() => {
+    Aos.init({duration:2000});
+  }, [])
+
   return (
     <section className=' Services'>
     <h1>Services</h1>
     <div className='service-list'>
-      <div className='service'>
+      <div data-aos="fade-right" className='service'>
         <h3>Create Websites </h3>
         <p>I create websites according to your wants and needs!</p></div>
-        <div className='service'>
+        <div data-aos="fade-left" className='service'>
         <h3>Refractor Code</h3>
         <p>Got a broken site? Contact me and we can fix it!</p></div>
-        <div className='service'>
+        <div data-aos="fade-right" className='service'>
         <h3>Technical Skills</h3>
         <p></p></div>
-        <div className='service'>
+        <div data-aos="fade-left" className='service'>
         <h3>Modern Layout</h3></div>
-        <div className='service'>
+        <div data-aos="fade-right" className='service'>
         <h3>Responsive Design</h3></div>
-        <div className='service'>
+        <div data-aos="fade-left" className='service'>
         <h3>Object-oriented Programming</h3></div>
-        <div className='service'>
+        <div data-aos="fade-right" className='service' >
         <h3>Object-Relational Mapping</h3></div>
-        <div className='service'>
+        <div data-aos="fade-left" className='service'>
         <h3>Model-View Controller framework</h3></div>
-        <div className='service'>
+        <div data-aos="fade-right" className='service'>
         <h3>Progressing Web Applivation</h3></div>
     </div>
     <div className='skills'>

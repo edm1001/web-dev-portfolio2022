@@ -8,7 +8,7 @@ function About() {
     <div>
     <section style={{marginBlock:'150px'}} className="intro" >
     <div  className='qoute' style={{color:'white'}}>
-      <h2> bl scbiuw scbhsdbhcs socn cb iwsb consscb wuah oasb cbsciun c auob a  sjcboua </h2>
+      <h2> In all human affairs there are efforts, and there are results and the strength of the effort is the measure of the result </h2><h4 style={{color:'red'}}> -James Allen</h4>
       <h4>
       <FcGoogle size={50}/>
       </h4>
