@@ -1,9 +1,14 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Placeholder from '../../Assets/images/placeholder.png';
 import {FcGoogle} from 'react-icons/fc';
 import {FaGithubAlt} from 'react-icons/fa';
+import Aos from 'aos';
+import "aos/dist/aos.css";
 
-function About() {
+const About=()=> {
+  useEffect(() => {
+    Aos.init({duration:3000});
+  }, [])
   return (
     <div>
     <section style={{marginBlock:'150px'}} className="intro" >
@@ -21,14 +26,14 @@ function About() {
 
     </section>
     <section className='about'>
-    <div className='welcome' style={{flex:'1'}}>
+    <div data-aos="fade-right" className='welcome' style={{flex:'1'}}>
        <h1> Welcome to my Webpage</h1>
        <p>
         My name is Edmer Valencia, I am a Full Stack Developer graduated from a coding bootcamp offered in UT at Austin. I am eager to learn and create various technologies and projects.
        </p>
 
        </div>
-       <img className='intro-img' src={Placeholder} alt='placeholder' style={{flex:1}}/>
+       <img data-aos="fade-left" className='intro-img' src={Placeholder} alt='placeholder' style={{flex:1}}/>
       </section>
     
     </div>
