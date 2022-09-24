@@ -1,6 +1,6 @@
 :root {
   --Grey : #343330;
-  --LightGrey: #4a442d;
+  --Brown: #4a442d;
   --DarkBlue : #32373B;
   --Blue : #4A5859;
   --LightBlue: #CAF7E2;
@@ -8,7 +8,7 @@
   --Black : #000;
 }
 body {
-  font-family: monospace;
+  font-family: 'Montserrat', serif;
   width:100%;
   height:100%;
   line-height: 2.0;
@@ -16,11 +16,13 @@ body {
   background-color: var(--Black);
 }
 h1 {
-  color: whitesmoke;
+  font-family: 'Tourney', serif;
+  color:Gray;
   text-align:center;
   border-bottom: 4px ridge var(--LightBlue);
   font-weight: bolder;
-  font-size: 30px;
+  font-size: 45px;
+  text-shadow: 2px 2px 1px var(--Blue);
 }
 /* HEADER START */
 .navbar {
@@ -31,7 +33,7 @@ h1 {
   flex-direction:row;
   color: var(--White);
   align-items: center;
-  background: var(--LightGrey);
+  background: var(--Brown);
   padding-block: 20px;
   /* 
   -rid the text decoration
@@ -48,7 +50,7 @@ h1 {
 
 /* HOME /BOUT START */
 .intro {
-  margin: 10%;
+  
   padding: 5px;
 }
 .intro h4{
@@ -76,7 +78,8 @@ h1 {
   color: var(--LightBlue)
 }
 .welcome{
-  width: 60%;  background-color: var(--Grey);
+  width: 50%;  
+  background-color: var(--Grey);
   color: var(--White);
   padding:10px;
   margin-left:10px;
@@ -86,8 +89,9 @@ h1 {
  
 }
 .intro-img {
-  height: 250px;
-  width:40px;
+  height: 100px;
+  width:100px;
+  margin-right: 15px;
 }
 /* HOME END */
 
@@ -95,8 +99,6 @@ h1 {
 
 /* PROJECTS START */
 .portfolio{
-  width:100%;
-  height:100%;
   text-align: center;
   background-color: var(--Black);
 }
@@ -105,27 +107,19 @@ h1 {
 }
 .projects{
   background-color: var(--Blue);
-  width: 100%;
-  height: 100%;
   display: flex;
   border: 0;
-
+  padding:5px;
+  justify-content: space-around;
+  align-items:center;
+  color: var(--White);
 }
-#project1, #project2 {
-  flex:1;
-  color: white;
-  border: dashed 2px var(--LightBlue);
+#project2{
+  background: url('./Assets/gifs/chatterize.gif');
+  background-size: cover;
 }
-#project1 a , #project2 a {
-  text-decoration: none;
-  color: white;
-  font-size: 25px;
-}
-#travel-gif , #chatterize {
-  width: 60%;
-  height:60%;
-  object-fit: contain;
-  
+#project1 {
+  background-image: url('./Assets/gifs/travel-blog.gif')
 }
 /* PROJECT END */
 /* SERVICES START */
@@ -141,12 +135,18 @@ h1 {
 }
 .service {
   width:30%;
-  height: 100%;
-  margin:5px; 
-  padding: 20px;
-  background-color: var(--White);
+  height: 40%;
+  padding: 12px;
+  color:var(--White);
   border-radius: 5px;
+}
+.service h3{
+  color:var(--Blue);
+  font-weight: bold;
 
+}
+.svc-logo{
+  color:var(--Brown);
 }
 .skills {
   color: white;
@@ -160,10 +160,12 @@ h1 {
 /* CONTACT START */
 .contact{
   color: var(--LightBlue);
-  height: 100%;
+  height: 100vh;
+  width:100%;
   display: flex;
   flex-direction: column;
   background-color: var(--Black);
+  justify-content: center;
 }
 .contact textarea{
   margin-inline:5px;
@@ -180,12 +182,13 @@ h1 {
 .message{
   display: flex;
   justify-content: space-around;
+  margin-left: 20px;
   flex-direction: column;
-  align-items:center;
+  align-items:flex-start;
 }
 #msg-info {
-  width:500px;
-  height:250px;
+  width: 250px;
+  height:170px;
   margin-bottom: 20px ;
   text-align: center;
   border-radius: 5px;
@@ -202,6 +205,14 @@ h1 {
 #sender-email{
   margin-top: 5px;
 }
+#submit-btn{
+  margin-top: 5px;
+  background-color: var(--LightBlue);
+  color: var(--Black);
+  border-radius:15px;
+  justify-content: center;
+  cursor: pointer;
+}
 /* CONTACT END */
 
 /* REVIEW START */
@@ -210,16 +221,17 @@ h1 {
   padding-bottom: 0;
 }
 .reviews{
-  background-color: var(--LightGrey)
+  background:linear-gradient(rgba(0,0,0,0.9), var(--Brown));
 }
 .review-list{
   justify-content: space-around;
   align-items:center;
   text-align:center;
-  background-color: var(--White);
-  margin: 10px;
+  background-color: var(--Black);
+  color:white;
+  margin: 10px 20px;
   padding:20px 15%;
-  border: 10px outset var(--Blue);
+  border: 8px inset var(--DarkBlue);
   border-radius: 10px
 }
 /*  REVIEW END*/

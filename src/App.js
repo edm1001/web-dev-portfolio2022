@@ -17,22 +17,9 @@ function App() {
           path="/"
           element = {<Home/>}>
           </Route>
-          {/* <Route 
-          path="/About"
-          element = {<About/>}>
-          </Route>
-          <Route 
-          path="/contact"
-          element = {<Contact/>}>
-          </Route>
-          <Route 
-          path="/project"
-          element = {<Projects/>}>
-          </Route> */}
         </Routes>
         </div>
-        {/* <div><Particle /></div> */}
-        <Footer/>
+       <Footer/>
       </Router>
       
     </div>

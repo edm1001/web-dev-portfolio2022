@@ -1,4 +1,5 @@
 import React from 'react'
+
 // import {Link} from 'react-router-dom';
 
 
@@ -11,8 +12,8 @@ function Header() {
         <a href='#portfolio'>Portfolio</a>
         <a href='#services'>Services</a>
         <a href='#contact'>Contact</a>
-        <a href="#resume">Resume</a>
         <a href="#reviews">Testimonials</a>
+        <a href="#resume" >Resume</a>
         </nav>
       </header>
   )
