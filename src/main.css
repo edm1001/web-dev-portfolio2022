@@ -173,9 +173,11 @@ h1 {
   align-items: center;
   
 }
-.icons{
+.medias{
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column;
+}
+.icons{
   width:100%;
   justify-content: space-between;
 }
@@ -190,7 +192,6 @@ h1 {
   width: 250px;
   height:170px;
   margin-bottom: 20px ;
-  text-align: center;
   border-radius: 5px;
 }
 .sender {
@@ -210,8 +211,11 @@ h1 {
   background-color: var(--LightBlue);
   color: var(--Black);
   border-radius:15px;
-  justify-content: center;
+  text-align: center;
   cursor: pointer;
+  padding: 10px 20px;
+  font-family: 'Tourney';
+  font-weight: bold;
 }
 /* CONTACT END */
 
