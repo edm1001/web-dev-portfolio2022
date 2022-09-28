@@ -1,21 +1,23 @@
 import React from 'react';
-import {Document, pdfjs} from 'react-pdf';
-
-import resumeFile from './EdVal-Resume2022.pdf';
+import resume from '../../utils/resume.pdf';
+import {Document, Page, pdfjs} from 'react-pdf';
+pdfjs.GlobalWorkerOptions.workerSrc= `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 const Resume=() => {
-  pdfjs.GlobalWorkerOptions.workerSrc = 
-    `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
-
-    // function onDocumentLoadSuccess({ numPages }) {
-    //   setNumPages(numPages);
-    //   setPageNumber(1);
-
   return (
+    <section id='resume'>
+      <h2> Resume </h2>
+      <div>
       <Document 
-      file={resumeFile}> 
-      {/* onLoadSuccess={onDocumentLoadSuccess} */}
+      file={resume}
+      onLoadError={console.error}
+      style={{width: 'auto', height: 'auto'}}
+      > 
+      <Page pageIndex={0}/>
+      <Page pageIndex={1}/>
       </Document>
+      </div>
+      </section>
   )
 }
 

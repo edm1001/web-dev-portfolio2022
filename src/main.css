@@ -106,7 +106,7 @@ h1 {
   margin: 0;
 }
 .projects{
-  background-color: var(--Blue);
+  background:linear-gradient( var(--Black),var(--DarkBlue), var(--Black));
   display: flex;
   border: 0;
   padding:5px;
@@ -124,7 +124,8 @@ h1 {
 /* PROJECT END */
 /* SERVICES START */
 .Services{
-  background-color: var(--Black);
+  /* background-color: var(--Black); */
+  background:linear-gradient( var(--Black),var(--Brown), var(--Black));
 }
 .service-list{
   display: flex;
@@ -146,7 +147,7 @@ h1 {
 
 }
 .svc-logo{
-  color:var(--Brown);
+  color:var(--LightBlue);
 }
 .skills {
   color: white;

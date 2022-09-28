@@ -9,24 +9,12 @@ import Resume from '../Components/Resume/Resume.js';
 export const Home = () => {
   return (
     <section>
-      <div>
       <About/>
-      </div>
-      <div>
       <Portfolio/>
-      </div>
-      <div>
       <Services/>
-      </div>
-      <div>
       <Contact/>
-      </div>
-      <div>
       <Reviews/>
-      </div>
-      <div>
       <Resume/>
-      </div>
     </section>
   )
 }

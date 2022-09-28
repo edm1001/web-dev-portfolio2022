@@ -1,13 +1,14 @@
-import React, {useState} from 'react';
+import React, {useState , useRef} from 'react';
 import { validateEmail } from '../../utils/helpers';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import emailjs from '@emailjs/browser';
 
 
 function Contact() {
   const [formState, setFormState] = useState({ name: '', email: '', message: '' });
 
   const [errorMessage, setErrorMessage] = useState('');
-  const { name, email, message } = formState;
+  const { name, email, message, subject } = formState;
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -33,20 +34,33 @@ function Contact() {
       }
     }
   };
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('personal_contact','contact_service', form.current, 'wLYbtp8s7HHiOK8mX')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+
+  };
+  
   return (
 
     
     <section className='contact' id='contact'>
     <h1>Contact</h1>
-    <h2> Message Me!</h2>
-    <form onSubmit={handleSubmit} className='message'>
-    <label htmlFor="message"> Subject:</label>  
+    <h2> Contact Me!</h2>
+    <form ref={form} onSubmit={handleSubmit && sendEmail} className='message'>
+    <label htmlFor="message"> Message:</label>  
     <textarea name='message' rows="5" defaultValue={message} onBlur={handleChange} id='msg-info' placeholder='Write Your Message Here...'></textarea>
     <div className='sender'>
-    <label htmlFor='name'>Full Name:</label>
-    <input name='name' type='name' placeholder='name' id='sender-name' defaultValue={name} onBlur={handleChange}></input>
-    <label htmlFor='email'>Email:</label>
-    <input type='email' name='email' id='sender-email' placeholder='email' defaultValue={email} onBlur={handleChange}></input>
+    <input type='subject' name='subject' id='sender-email' placeholder='Subject' defaultValue={subject} onBlur={handleChange}></input>
+    <input name='user_name' type='name' placeholder='name' id='sender-name' defaultValue={name} onBlur={handleChange}></input>
+    <input type='email' name='user_email' id='sender-email' placeholder='email' defaultValue={email} onBlur={handleChange}></input>
     </div>
     {errorMessage && (
           <div>

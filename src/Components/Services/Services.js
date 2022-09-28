@@ -1,12 +1,13 @@
 import React, {useEffect} from 'react'
 import Aos from 'aos';
 import "aos/dist/aos.css"
-//add tech logos for service section
-import {CgWebsite} from "react-icons/cg";
+import TinySlider from "tiny-slider-react";
+import 'tiny-slider/dist/tiny-slider.css';
 
+//add tech logos
+import {CgWebsite} from "react-icons/cg";
 import {BiCodeAlt} from "react-icons/bi";
 import {GiProgression} from "react-icons/gi";
-//add tech logos in skills
 import {AiOutlineHtml5, AiFillGithub, AiOutlineCluster} from 'react-icons/ai';
 import {IoLogoCss3, IoLogoJavascript} from 'react-icons/io';
 import {SiExpress, SiMongodb, SiInsomnia, SiJquery, SiTailwindcss, SiSequelize, SiBookstack, } from 'react-icons/si';
@@ -15,7 +16,11 @@ import {GrHeroku , GrMysql} from 'react-icons/gr';
 import {FaReact, FaBootstrap, FaObjectGroup} from 'react-icons/fa';
 import {VscJson} from 'react-icons/vsc'
 
-// className="svc-logo"
+const settings = {
+  lazyload: true,
+  nav: false,
+  mouseDrag: true
+};
 
 const Services =() => {
     useEffect(() => {
@@ -98,9 +103,9 @@ const Services =() => {
     </div>
     <div className='skills'>
     <h2> Technologies Learned</h2>
-    <p className='tech'>
-          {/* add colors for icons */}
-          <AiOutlineHtml5 size={50} color='darkorange' className="skl-logo" />
+    <TinySlider settings={settings} >
+    {/* {imgs.map((el, index) => ( */}
+          <div style={{position:"relative"}}><AiOutlineHtml5 size={50} color='darkorange' className="skl-logo"  />
           <IoLogoCss3 size={50} color='lightblue' className="skl-logo" />
           <IoLogoJavascript size={50} color='gold' className="svc-logo" />
           <SiJquery size={50} className="skl-logo"/>
@@ -117,9 +122,13 @@ const Services =() => {
           <SiSequelize size={50} color='darkblue' className="skl-logo"/>
           <GrHeroku size={50} color='purple' className="skl-logo"/>
           <GrMysql size={50} color='blue'  className="skl-logo"/>
-          <AiFillGithub size={50}  className="skl-logo"/>
-    </p>
-    </div>
+          <AiFillGithub size={50}  className="skl-logo"/></div>
+         
+    </TinySlider>
+    </div> 
     </section>
   ) }
 export default Services
+
+// transform the logo to images
+//add nec-classes and color
