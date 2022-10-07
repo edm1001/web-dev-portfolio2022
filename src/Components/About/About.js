@@ -10,9 +10,13 @@ const About=()=> {
     Aos.init({duration:3000});
   }, [])
   return (
-    <div>
-    <section style={{marginBlock:'150px'}} className="intro" id="home" >
-    <div  className='qoute' style={{color:'white'}}>
+    <>  
+    <section style={{marginBlock:'150px'}} className="intro video-background" id="home" >
+      <div className="video-background__inner">
+        {/* add automated video */}
+        <video className='video-background__video' src="..."> </video>
+      </div>
+    <div  className='qoute video-background__content' style={{color:'white'}}>
       <h2> In all human affairs there are efforts and there are results, and the strength of the effort is the measure of the result </h2><h4 style={{color:'red'}}> - James Allen</h4>
       <h4>
       <FcGoogle size={50}/>
@@ -36,7 +40,7 @@ const About=()=> {
        <img data-aos="fade-left" className='intro-img' src={Placeholder} alt='placeholder' style={{flex:1}}/>
       </section>
     
-    </div>
+    </>
   )
 }
 

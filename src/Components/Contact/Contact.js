@@ -59,8 +59,8 @@ function Contact() {
     <textarea name='message' rows="5" defaultValue={message} onBlur={handleChange} id='msg-info' placeholder='Write Your Message Here...'></textarea>
     <div className='sender'>
     <input type='subject' name='subject' id='sender-email' placeholder='Subject' defaultValue={subject} onBlur={handleChange}></input>
-    <input name='user_name' type='name' placeholder='name' id='sender-name' defaultValue={name} onBlur={handleChange}></input>
-    <input type='email' name='user_email' id='sender-email' placeholder='email' defaultValue={email} onBlur={handleChange}></input>
+    <input name='user_name' type='name' placeholder='Name' id='sender-name' defaultValue={name} onBlur={handleChange}></input>
+    <input type='email' name='user_email' id='sender-email' placeholder='Email' defaultValue={email} onBlur={handleChange}></input>
     </div>
     {errorMessage && (
           <div>

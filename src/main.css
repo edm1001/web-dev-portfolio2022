@@ -19,13 +19,13 @@ h1 {
   font-family: 'Tourney', serif;
   color:Gray;
   text-align:center;
-  border-bottom: 4px ridge var(--LightBlue);
+  text-decoration:underline var(--LightBlue);
   font-weight: bolder;
   font-size: 45px;
   text-shadow: 2px 2px 1px var(--Blue);
 }
 /* HEADER START */
-.navbar {
+.nav-bar {
   display: flex;
   justify-content: space-between;
   font-weight: bold;
@@ -35,15 +35,21 @@ h1 {
   align-items: center;
   background: var(--Brown);
   padding-block: 20px;
-  /* 
-  -rid the text decoration
-  -find better background
-  - */
+  list-style-type:none ;
 }
-.navbar a {
-  text-decoration: none;
+.MobileNavigation {
+  display:none;
+}
+.navlinks {
   list-style-type: none;
-  color: var(--White)
+  flex-direction: row;
+  display:flex;
+  font-weight: bold;
+  font-size: 20px;
+}
+.navlinks a {
+  color: white;
+  text-decoration: none;
 }
 
 /* HEADER END */
@@ -77,6 +83,37 @@ h1 {
 .welcome h1 {
   color: var(--LightBlue)
 }
+
+.video-background {
+  /* Used to position the video and content */
+  position: relative;
+}
+
+.video-background__inner {
+  /* Positioned at the top left corner */
+  left: 0px;
+  position: absolute;
+  top: 0px;
+
+  /* Take full size */
+  height: 100%;
+  width: 100%;
+
+  /* Hide the scrollbar */
+  overflow: hidden;
+}
+
+.video-background__video {
+  object-fit: cover;
+
+  /* Take full width */
+  height: 100%;
+  max-width: 100%;
+}
+
+
+
+
 .welcome{
   width: 50%;  
   background-color: var(--Grey);
@@ -98,14 +135,7 @@ h1 {
 
 
 /* PROJECTS START */
-.portfolio{
-  text-align: center;
-  background-color: var(--Black);
-}
-.portfolio h1 {
-  margin: 0;
-}
-.projects{
+/* .projects{
   background:linear-gradient( var(--Black),var(--DarkBlue), var(--Black));
   display: flex;
   border: 0;
@@ -113,14 +143,8 @@ h1 {
   justify-content: space-around;
   align-items:center;
   color: var(--White);
-}
-#project2{
-  background: url('./Assets/gifs/chatterize.gif');
-  background-size: cover;
-}
-#project1 {
-  background-image: url('./Assets/gifs/travel-blog.gif')
-}
+} */
+
 /* PROJECT END */
 /* SERVICES START */
 .Services{
@@ -255,20 +279,50 @@ h1 {
 }
 
 
-/* Media Query
---fix welcome section
-*/
-/* @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* MEDIA QUERY STYLES */
+@media only screen and (max-width: 1024px){
+  header nav a {
+    top: 85px;
+    width: 100%;
+    height:100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1px;
+    line-height: 1.5;
+    transition: 1.5s;
+    font-size: .8rem;
+    padding: 30px;
+    padding-inline: 15px;
+    cursor: pointer;
   }
-}
+  .navlinks {
+    flex-direction: column;
+    color:var(--textColor);
+    display:flex;
+    align-items: center;
+    width:100%;
+  }
+  .Navbar .Navigation {
+    display:none;
+    
+  }
+  .Navbar .MobileNavigation {
+    display: flex;
+    align-items: center;
+  }
+  .burger {
+    color: white;
+    position: absolute;
+    right: 3%;
+    display: flex;
+    top:3%;
+    cursor: pointer;
+    justify-content: space-between;
+  }
+/* service */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
+
+
+}
