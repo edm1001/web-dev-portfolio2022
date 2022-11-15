@@ -16,7 +16,7 @@ const MobileNavigation = () => {
 
     return (
     <nav 
-    className="MobileNavigation">
+    className="MobileNavigation ">
     {open ? closeIcon : burgerIcon }
     {open && <NavLinks isMobile={true} closeMobileMenu={closeMobileMenu} />}
     </nav>        
