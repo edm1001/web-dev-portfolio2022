@@ -96,7 +96,7 @@ const Home = () => {
        <img data-aos="fade-left" className='intro-img' src={Placeholder} alt='placeholder' style={{flex:1}}/>
       </section>
       <Portfolio/>
-      <section className=' Services' id='services'>
+      <section className='justify-center' id='services'>
     <h1>Services</h1>
     <div className='service-list'>
         <div data-aos="zoom-in" className='service'>
