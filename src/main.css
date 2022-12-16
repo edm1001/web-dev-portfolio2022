@@ -159,17 +159,18 @@ h1 {
   flex:1;
 }
 .service {
-  width:30%;
-  height: 40%;
-  padding: 12px;
   color:var(--White);
-  border-radius: 5px;
+
 }
 .service h3{
-  color:var(--Blue);
+  color:var(--White);
   font-weight: bold;
 
 }
+.service p {
+  color: #d5ab44;
+}
+
 .svc-logo{
   color:var(--LightBlue);
 }
@@ -202,10 +203,7 @@ h1 {
   display: flex;
   flex-direction: column;
 }
-.icons{
-  width:100%;
-  justify-content: space-between;
-}
+
 .message{
   display: flex;
   justify-content: space-around;

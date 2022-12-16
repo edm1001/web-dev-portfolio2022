@@ -7,6 +7,9 @@ import Aos from 'aos';
 import "aos/dist/aos.css";
 import { validateEmail } from '../utils/helpers.js';
 import emailjs from '@emailjs/browser';
+
+import {Container,Row, Col,Modal, Button, Form } from"react-bootstrap";
+
 // tech logos
 import {FcGoogle} from 'react-icons/fc';
 import {FaGithubAlt,FaLinkedin,FaGithub} from 'react-icons/fa';
@@ -86,52 +89,64 @@ const Home = () => {
       </h4>
       </div> 
     </section>
-    <section className='about' id="about">
-    <div data-aos="fade-right" className='welcome' style={{flex:'1'}}>
+
+    <Container className='about' id="about">
+
+    <Row data-aos="fade-right" className='welcome' style={{flex:'1'}}>
        <h1> Welcome to my Webpage</h1>
        <p>
         My name is Edmer Valencia, I am a Full Stack Developer that graduated from the coding bootcamp program offered in University of Texas at Austin. I am eager to learn and create various technologies and projects.
        </p>
-       </div>
+       </Row>
        <img data-aos="fade-left" className='intro-img' src={Placeholder} alt='placeholder' style={{flex:1}}/>
-      </section>
+      </Container>
+
       <Portfolio/>
-      <section className='justify-center' id='services'>
+
+    <section id='services'>
     <h1>Services</h1>
-    <div className='service-list'>
-        <div data-aos="zoom-in" className='service'>
+        <Container >
+          <Row className='d-flex text-center'>
+
+        <Col data-aos="zoom-in" className=' col-lg-4 col-md-6 col-sm-12 service'>
         <CgWebsite size={50} className="svc-logo"/>
         <h3>Create Websites </h3>
-        <p>I create websites according to your wants and needs!</p></div>
-        <div data-aos="zoom-in" className='service'>
+        <p>I create websites according to your wants and needs!</p></Col>
+
+        <Col data-aos="zoom-in" className='col-lg-4 col-md-6 col-sm-12 service'>
         <BiCodeAlt size={50} className="svc-logo"/> 
         <h3>Refractor Code</h3>
-        <p>Got a broken site? Contact me and we can fix it!</p></div>
-        <div data-aos="zoom-in" className='service'>
+        <p>Got a broken site? Contact me and we can fix it!</p></Col>
+
+        <Col data-aos="zoom-in" className='col-lg-4 col-md-6 col-sm-12 service'>
         <SiBookstack size={50} className="svc-logo"/>
         <h3>Technical Skills</h3>
-        <p>Knowledge of various popular coding languages</p></div>
-        <div data-aos="zoom-in" className='service'>
+        <p>Knowledge of various popular coding languages</p></Col>
+        
+        <Col data-aos="zoom-in" className='col-lg-4 col-md-6 col-sm-12 service'>
         <DiResponsive size={100} className="svc-logo"/>
         <h3>Responsive Design</h3>
         <p>Responsive features on any device</p>
-        </div>
-        <div data-aos="zoom-in" className='service'>
+        </Col>
+
+        <Col data-aos="zoom-in" className='col-lg-4 col-md-6 col-sm-12 service'>
         <FaObjectGroup size={50} className="svc-logo"/>
         <h3>Object-oriented Programming</h3>
         <p>Create easier to refractor sites using reusable code blocks and object-relational mapping.</p>
-        </div>
-        <div data-aos="zoom-in" className='service'>
+        </Col>
+        <Col data-aos="zoom-in" className='col-lg-4 col-md-6 col-sm-12 service'>
         <AiOutlineCluster size={50} className="svc-logo"/>
         <h3>Model-View Controller framework</h3>
         <p>A framework pattern for computer softwares that easily distinguish related program logic into model, view, and controller elements.</p>
-        </div>
-        <div data-aos="zoom-in" className='service'>
+        </Col>
+        <Col data-aos="zoom-in" className='col-lg-4 col-md-6 col-sm-12 service'>
         <GiProgression size={50} className="svc-logo"/>
         <h3>Progressing Web Application</h3>
         <p>Web apps that use workers, manifests, and other features together to make the site as effecient as possible.</p>
-        </div>
-    </div>
+        </Col>
+          </Row>
+      </Container>
+
     <div className='skills'>
     <h2> Technologies Learned</h2>
           <div style={{position:"relative"}}><AiOutlineHtml5 size={50} color='darkorange' className="skl-logo"  />
@@ -155,28 +170,31 @@ const Home = () => {
     </div> 
     </section>
       
-    <section className='contact' id='contact'>
+    <Container className='justify-center contact' id='contact'>
     <h1>Contact</h1>
-    <form ref={form} onSubmit={handleSubmit && sendEmail} className='message'>
-    <label htmlFor="message"> Message:</label>  
-    <textarea name='message' rows="5" defaultValue={message} onBlur={handleChange} id='msg-info' placeholder='Summary of reasons of contact'></textarea>
-    <div className='sender'>
-    <input type='subject' name='subject' id='sender-email' placeholder='Subject' defaultValue={subject} onBlur={handleChange}></input>
-    <input name='user_name' type='name' placeholder='Name' id='sender-name' defaultValue={name} onBlur={handleChange}></input>
-    <input type='email' name='user_email' id='sender-email' placeholder='Email' defaultValue={email} onBlur={handleChange}></input>
-    </div>
+    <Row>
+    <Col>
+    <Form ref={form} onSubmit={handleSubmit && sendEmail} className='message'>
+    <Form.Group>
+    <Form.Label htmlFor="message"> Message:</Form.Label>  
+    <Form.Control name='message' rows="5" defaultValue={message} onBlur={handleChange} id='msg-info' placeholder='Summary of reasons of contact'></Form.Control>
+    </Form.Group>
+
+    <Form.Group>
+    <Form.Label type='subject' name='subject' id='sender-email' placeholder='Subject' defaultValue={subject} onBlur={handleChange}></Form.Label>
+    <Form.Control name='suser_name' type='name' placeholder='Name' defaultValue={name} onBlur={handleChange}></Form.Control>
+    <Form.Control type='email' name='user_email' id='sender-email' placeholder='Email' defaultValue={email} onBlur={handleChange}></Form.Control>
+    </Form.Group>
     {errorMessage && (
           <div>
             <p className="error-text">{errorMessage}</p>
           </div>
         )}
-    <button className='hover:text-white' type="submit" value="submit"  id='submit-btn'> Submit!</button>
-    </form>
-
-
-
-
-    <div className='icons'>
+    <Button type="submit" value="submit"  id='submit-btn'> Submit!</Button>
+    </Form>
+    </Col>
+    </Row>
+    <Col>
                 <a href='https://www.linkedin.com/in/edmer-valencia-080414227/'>
                 <FaLinkedin
   color='darkblue' size={50}
@@ -186,8 +204,8 @@ const Home = () => {
   color='white' size={50}
                 /></a>
                 </a>
-                </div>
-    </section>  
+                </Col>
+    </Container>  
 
       <Reviews/>
 
