@@ -194,12 +194,12 @@ const Home = () => {
     </Form>
     </Col>
     </Row>
-    <Col>
-                <a href='https://www.linkedin.com/in/edmer-valencia-080414227/'>
+    <Col className='display-flex justify-center items-center'>
+                <a href='https://www.linkedin.com/in/edmer-valencia-080414227/' >
                 <FaLinkedin
   color='darkblue' size={50}
                 /> 
-                <a href='https://github.com/edm1001'>
+                <a href='https://github.com/edm1001' className='col-6'>
                 <FaGithub
   color='white' size={50}
                 /></a>
