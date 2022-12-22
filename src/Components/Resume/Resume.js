@@ -13,25 +13,24 @@ const Resume=() => {
   const handleShow = () => setShow(true);
 
   return (
-    <section id='resume'>
+    <sectio>
       <Button onClick={handleShow}> Resume </Button>
 
 
-      <Modal className="modal-lg" show={show}>
+      <Modal className="display-flex justify-center background-black" show={show}>
       <Modal.Header onClick={handleClose} closeButton></Modal.Header>
       <Modal.Title>Resume 📃</Modal.Title>
       <Modal.Body>
       <Document 
       file={resume}
       onLoadError={console.error}
-      style={{width: 'auto', height: 'auto'}}
       > 
       <Page pageIndex={0}/>
       <Page pageIndex={1}/>
       </Document>
       </Modal.Body>
       </Modal>
-      </section>
+      </sectio>
   )
 }
 

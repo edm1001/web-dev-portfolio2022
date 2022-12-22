@@ -147,10 +147,7 @@ h1 {
 
 /* PROJECT END */
 /* SERVICES START */
-.Services{
-  /* background-color: var(--Black); */
-  background:linear-gradient( var(--Black),var(--Brown), var(--Black));
-}
+
 .service-list{
   display: flex;
   flex-wrap: wrap;

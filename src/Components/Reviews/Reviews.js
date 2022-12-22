@@ -3,18 +3,22 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {GrBlockQuote} from "react-icons/gr";
+import { Card } from 'react-bootstrap';
 
 
 const Reviews =() => {
   useEffect(()=> {
     Aos.init({duration:3000})
   },[])
+
+  
   return (
     <div id='reviews'>
     <h1>Reviews</h1>
     <section className='reviews'>
     <div data-aos="flip-down" className='review-list'>
-      <GrBlockQuote size={60} color='#CAF7E2'/>
+      <GrBlockQuote size={60} color='#CAF7E2' />
+      <h4>Central Grader, DG</h4>
     <p>
     Hi Edmer,
 Your Regex tutorial on email validation is clean and readable! You were able to explain the purpose and the proper usage of this complex feature! 
@@ -24,7 +28,7 @@ You created a unique GitHub gist that provided all the necessary markdown needed
 
 Overall strong effort, keep up the awesome work!
     </p>
-    <h4>Central Grader, DG</h4>
+    
     <p>April 27 2022</p>
     </div>
     <div className='review-list' data-aos="flip-down">
@@ -33,6 +37,8 @@ Overall strong effort, keep up the awesome work!
         <h4>Walter Perry</h4>
         <p>June 4 2022</p>
     </div>
+
+
     <div className='review-list' data-aos="flip-down">
     <GrBlockQuote size={60} color='#CAF7E2'/>
         <p>Hi Edmer,

@@ -30,25 +30,25 @@ const Projects =( ) => {
   return (
     //click method shows the info
 
-    <section className='project' id="project">
-    <Container>
-      <Row>
-        <Col>
+    <section >
+    
         <h1>Projects</h1>
-          <Row>
+        <Container>
+          <Row >
+            
             {
               projects.map((project, index) => {
                 return (
-                  <ProjectCard
+                  <Col >
+                  <ProjectCard className='col-lg-4 col-md-6 col-sm-12'
                   key={index}
                   {...project}
-                  />
+                  /></Col>
                 )
               })
             }
+            
           </Row>
-        </Col>
-      </Row>
     </Container>
     </section>
   )

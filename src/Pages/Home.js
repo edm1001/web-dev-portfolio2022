@@ -8,7 +8,7 @@ import "aos/dist/aos.css";
 import { validateEmail } from '../utils/helpers.js';
 import emailjs from '@emailjs/browser';
 
-import {Container,Row, Col,Modal, Button, Form } from"react-bootstrap";
+import {Container,Row, Col, Button, Form } from"react-bootstrap";
 
 // tech logos
 import {FcGoogle} from 'react-icons/fc';
@@ -124,7 +124,7 @@ const Home = () => {
         <p>Knowledge of various popular coding languages</p></Col>
         
         <Col data-aos="zoom-in" className='col-lg-4 col-md-6 col-sm-12 service'>
-        <DiResponsive size={100} className="svc-logo"/>
+        <DiResponsive size={70} className="svc-logo"/>
         <h3>Responsive Design</h3>
         <p>Responsive features on any device</p>
         </Col>
@@ -206,11 +206,11 @@ const Home = () => {
                 </a>
                 </Col>
     </Container>  
-
+ <Resume/>
       <Reviews/>
 
 
-      <Resume/>
+      
     </>
   )
 }
