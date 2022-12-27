@@ -1,17 +1,8 @@
 import React from 'react';
 import {Container , Row, Col} from "react-bootstrap";
-import {ProjectCard} from './ProjectCard.js';
-import "./project.css"
 import travelDiary from '../../Assets/gifs/travel-blog.gif';
 import Chatterize from '../../Assets/gifs/chatterize.gif';
 
-// import {BiLinkExternal} from 'react-icons/bi';
-// import {IoLogoJavascript} from 'react-icons/io';
-// import {SiExpress, SiMongodb, SiInsomnia, SiSequelize, } from 'react-icons/si';
-// import {FaReact} from 'react-icons/fa';
-// import {DiNodejs} from 'react-icons/di';
-// import {GrHeroku , GrMysql} from 'react-icons/gr';
-// import {BsGlobe} from 'react-icons/bs';
 
 const Projects =( ) => {
   const projects  = [
@@ -40,10 +31,8 @@ const Projects =( ) => {
               projects.map((project, index) => {
                 return (
                   <Col >
-                  <ProjectCard className='col-lg-4 col-md-6 col-sm-12'
-                  key={index}
-                  {...project}
-                  /></Col>
+                  project here
+                  </Col>
                 )
               })
             }

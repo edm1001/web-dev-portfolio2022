@@ -6,12 +6,12 @@ import { Nav,Navbar,Container } from "react-bootstrap";
 
 function Header() {
   return (
-    <Navbar bg="dark" variant="dark" expand="lg" >
+    <Navbar sticky="top" bg="dark" variant="dark" expand="lg" >
       <Container>
         <Navbar.Brand>Iconhere</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
         <Navbar.Collapse id="responsive-navbar-nav" >
-        <Nav >
+        <Nav className="me-auto">
           <Nav.Link href="#home">Home</Nav.Link>
           <Nav.Link href="#about">About me</Nav.Link>
           <Nav.Link href="#portfolio">Portfolio</Nav.Link>

@@ -105,8 +105,8 @@ const Home = () => {
 
     <section id='services'>
     <h1>Services</h1>
-        <Container >
-          <Row className='d-flex text-center'>
+        <Container className='m-auto'>
+          <Row className='mt-3 d-flex text-center'>
 
         <Col data-aos="zoom-in" className=' col-lg-4 col-md-6 col-sm-12 service'>
         <CgWebsite size={50} className="svc-logo"/>
@@ -147,8 +147,8 @@ const Home = () => {
           </Row>
       </Container>
 
-    <div className='skills'>
-    <h2> Technologies Learned</h2>
+    <div className='skills my-5'>
+    <h2 className="pb-2"> Technologies Learned</h2>
           <div style={{position:"relative"}}><AiOutlineHtml5 size={50} color='darkorange' className="skl-logo"  />
           <IoLogoCss3 size={50} color='lightblue' className="skl-logo" />
           <IoLogoJavascript size={50} color='gold' className="svc-logo" />
@@ -206,7 +206,9 @@ const Home = () => {
                 </a>
                 </Col>
     </Container>  
- <Resume/>
+ <Resume 
+ className=""
+ />
       <Reviews/>
 
 
